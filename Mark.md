@@ -15,6 +15,6 @@ Lista de diseño:
 ~~~
 esto es un codigo 
 ~~~
-__hola__
+__Soy letra oscurita__
 
-hola
+_Soy letra bailona_
