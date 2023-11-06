@@ -5,6 +5,7 @@ Lista de cosas:
 - Pedir analisis Lovi
 - Buscar regalos navidad
 - proyecto diseño de personaje
+
 Lista de diseño:
 1. ¿quién *es*?
 2. ¿de dónde viene?
