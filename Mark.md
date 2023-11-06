@@ -20,3 +20,8 @@ __Soy letra oscurita__
 _Soy letra bailona_
 
 ***Soy letra latina***
+!https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png
+
+`codigo secreto`
+
+Tu Wiki :https://es.wikipedia.org/wiki/Imagen
