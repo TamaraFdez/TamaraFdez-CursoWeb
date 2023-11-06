@@ -11,7 +11,9 @@ Lista de diseño:
 2. ¿de dónde viene?
 3. ¿Cómo es?
 4. ¿que **ropa** lleva?
-~~esto es un codigo~~
+~ 
+esto es un codigo 
+~
 __hola__
 
 hola
