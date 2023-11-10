@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body {
+           
+            background-color: beige;
+        }
+
+        #Menu {
+            display: inline;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(59, 59, 59);
+
+            text-align: center;
+
+            font-size: 25px !important;
+        }
+
+        
+        
+        a:link {
+            color: #deabff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgba(178, 133, 184, 0.548);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(230, 110, 110);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #d9a7fa;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        h1 {
+            padding-top: 50px;
+        }
+        header,main {padding-left: 25px;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Listas</h1>
+    </header>
+    <nav>
+        <div id="Menu">
+            <a href="../">Inicio</a>
+
+            <a href="../HTML5/">Primeros Pasos</a>
+
+            <a href="../ejercicios_html_texto/">Etiquetas</a>
+
+            <a href="../ejercicios_html_listas/">Listas</a>
+
+            <a href="../Ejercicios_html_tablas/">Tablas</a>
+
+            <a href="../Picasso/imagenespicaso/Picasso.html">Picasso</a>
+
+            <a href="../Tipos_de_imagenes/">Imagenes</a>
+
+            <a href="../Ejercicio_maquetar_y_anclas/">Anclas</a>
+
+            <a href="../Navegación/">Navegación</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2><a href="listas_01/lista1.html">Lista de definiciones</a></h2>
+            <dl>
+                <dt><strong>HTTP:</strong></dt>
+                <dd>
+                    Protocolo de la capa de aplicación para la transferencia de archivos de hipertexto,
+                    como html.
+                </dd>
+                <dt><strong>HTML:</strong></dt>
+                <dd>
+                    HyperText Markup Languaje, es el lenguaje con el que se define el contenido de las
+                    páginas web, En resumen, se trata de un conjunto de etiquetas que sirven para definir un texto y
+                    otros
+                    elementos que componen una página web.
+                </dd>
+                <dt><strong>URL: </strong></dt>
+                <dd>Dirección web</dd>
+                <dt><strong>TCP/IP:</strong></dt>
+                <dd>Modelo funcional del protocolo de enlade de datos que se usa en internet </dd>
+                <dt><strong>W3C:</strong></dt>
+                <dd>Varias organizaciones unidas en el World wide wed consortium para trabajar en
+                    desarrolar estandares de la web para mantener la accesibilidad, internacionalización privacidad y
+                    seguridad
+
+                </dd>
+                <dt><strong>Mozilla Foundation:</strong></dt>
+                <dd>
+                    Organización sin animo de lucro creada en 1998 con la liberación del
+                    código fuente del navegador Netscape. Es una comunidad goblal que se dedica a proteger la Web como
+                    un
+                    recurso público y ayudar a sus usuarios, crea productos de código abierto, enseña habilidades del
+                    siglo 21 y
+                    estimula campañas de promoción a escala comunitaria
+                </dd>
+            </dl>
+        </section>
+        <section>
+            <h2><a href="listas_02/lista2.html">Tipos de listas</a></h2>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+            <ul type="circle">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+            <ul type="square">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+
+
+            <ol reversed type="a">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ol>
+            <ol reversed type="1" start="100">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ol>
+            <ol type="i" start="999">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ol>
+        </section>
+        <section>
+            <h3><a href="listas_03/lista3.html">Listas anidadas</a></h3>
+            <ul>
+                <li>Nadadores</li>
+                <li>Ciclistas</li>
+                <li>Atletas</li>
+                <li>Futbolistas
+                    <ul style="list-style-type:circle;">
+                        <li>Messi</li>
+                        <li>Cr7</li>
+                        <li>Joao</li>
+
+                    </ul>
+
+            </ul>
+            <h3>Provincias</h3>
+            <ul>
+                <li>Barcelona
+                    <ul style="list-style-type:circle;">
+                        <li>Mataró</li>
+                        <li>sabadell</li>
+                    </ul>
+                <li>Tarragona
+                    <ul>
+                        <li>Reus </li>
+                        <li>Salou</li>
+                        <li>Cambrils</li>
+                    </ul>
+                <li>Lleida</li>
+                <li>Girona</li>
+            </ul>
+            <h3>Info</h3>
+            <ul>
+                <li>Sobre mi</li>
+                <li>Servicios</li>
+                <li>Tutoriales
+                    <ul>
+                        <li>tutorial html<ul>
+                                <li>Enlaces</li>
+                                <li>Imagénes</li>
+                                <li>Listas</li>
+                            </ul>
+                        <li>tutorial css</li>
+                        <li>tutorial javascrip</li>
+                        <li>tutorial wordpress</li>
+                    </ul>
+                <li>Contacto</li>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Imagenes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-radius: 10px
+        }
+
+        th {
+            padding: 5px 10px;
+            background-color: rgb(221, 187, 253);
+
+            text-align: center;
+            border-radius: 10px
+        }
+
+        th:nth-child(even) {
+            background-color: rgb(160, 190, 235)
+        }
+
+        td {
+            padding: 5px 10px;
+            background-color: rgb(241, 230, 252);
+            border: 1px solid #ffffff;
+            text-align: center;
+
+        }
+
+        td:nth-child(even) {
+            background-color: rgba(142, 185, 245, 0.301)
+        }
+        h1 {padding-top: 50px;}
+        #Menu {
+            display: inline;
+            position: fixed; top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: beige;
+
+            text-align: center;
+            color: #2d2630;
+            font-size: 25px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header><h1>Tipos de imagenes</h1></header>
+    <nav>
+        <div id="Menu">
+        <a href="../">Inicio</a>
+
+        <a href="../HTML5/">Primeros Pasos</a>
+
+        <a href="../ejercicios_html_texto/">Etiquetas</a>
+
+        <a href="../ejercicios_html_listas/">Listas</a>
+
+        <a href="../Ejercicios_html_tablas/">Tablas</a>
+
+        <a href="../Picasso/imagenespicaso/Picasso.html">Picasso</a>
+
+        <a href="../Tipos_de_imagenes/">Imagenes</a>
+
+        <a href="../Ejercicio_maquetar_y_anclas/">Anclas</a>
+
+        <a href="../Navegación/gatos_felices/">Navegación</a>
+    </div>
+    </nav>
+    <main>
+    <table>
+        
+        <thead>
+            <tr>
+                <th>Formato</th>
+                <th>Nombre completo</th>
+                <th>Extensión</th>
+                <th>Tipo</th>
+                <th>Ventajas</th>
+                <th>Desventajas</th>
+                <th>Ejemplo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JPG</td>
+                <td>Joint Photographic Experts Group </td>
+                <td>.jpg .jpeg</td>
+                <td>Rasterizado</td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Compatible con la mayoria de navegadores y programas </li>
+                        <li> Puede mostrar millones de colores</li>
+                        <li>Ideal para imagenes de gran tamaño y fotografías</li>
+
+                    </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Pierde calidad al cambiar el tamaño (se pixela)</li>
+                        <li>No admite transparencia</li>
+                    </ul>
+                </td>
+                <td><img src="https://img.freepik.com/foto-gratis/lobo-entorno-natural_23-2150526661.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>PNG</td>
+                <td>.png</td>
+                <td>Portable Network Graphics</td>
+                <td>Rasterizado</td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Admite transparencias y degradados</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Muy pesado</li>
+                    </ul>
+                </td>
+                <td> <img
+                        src="https://images.vexels.com/media/users/3/311367/isolated/preview/b865f5db84069a4a8ecaac7c795d1384-lobo-lindo-animal.png"
+                        alt=""></td>
+            </tr>
+            <tr>
+                <td>GIF</td>
+                <td>.gif</td>
+                <td>Graphics Interchange Format</td>
+                <td>Rasterizado</td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Compresión de datos con el algoritmo Lempel-Ziv-Welch</li>
+                        <li>Tamaño ligero</li>
+                        <li>Acepta animación</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Baja calidad</li>
+                    </ul>
+                </td>
+                <td><img src="https://media3.giphy.com/media/tYaMjbShvb9CM/giphy.gif" alt=""></td>
+            </tr>
+
+            <tr>
+                <td>WebP</td>
+                <td>.webp</td>
+                <td>WebP</td>
+                <td>Rasterizado</td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Ligero</li>
+                        <li>Permite mostrar la misma calidad que JPEG sin pérdidas de gráficos en 24 bits</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:square;">
+                        <li>Muchos programas estándar de retoque fotográfico no admiten WebP</li>
+                        <li>Sólo los navegadores web modernos soportan WebP, las cámaras de fotos y teléfonos guardan
+                            las imágenes en JPEG
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vulphere_WebP_OTAGROOVE_demonstration_2.webp/1280px-Vulphere_WebP_OTAGROOVE_demonstration_2.webp" alt="imagen webp">
+                </td>
+            </tr>
+
+            <tr>
+                <td>SVG</td>
+                <td>.svg</td>
+                <td>Scalable Vector Graphics</td>
+                <td>Vectorial</td>
+                <td>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            Escalable, no pierde calidad aumentando o disminuyendolo
+                        </li>
+                    <li>
+                        Tamaño minimo y bien optimizado
+                    </li></ul>
+                </td>
+                <td>
+                    <ul style="list-style-type: square;">
+                        <li>
+                          Formas limitadas 
+                        </li>
+                    <li>
+                        No es facil trabajar con ellos para editarlos
+                    </li>
+                        <li>
+                            No son tan faciles de incrustar como .png y algunas bibliotecas multimedia no los admiten por defecto
+                    </li></ul>
+                </td>
+                <td><img src="https://svgsilh.com/svg/159979.svg" alt="vector lobo"></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</main>
+</body>
+
+</html>

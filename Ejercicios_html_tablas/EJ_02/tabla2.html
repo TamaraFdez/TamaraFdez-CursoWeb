@@ -1,0 +1,87 @@
+<!-- Crea una tabla como la de la imagen.
+
+Ten en cuenta las etiquetas <caption>, <thead> y <tbody>
+
+Puedes usar el estilo siguiente para que se vea mejor:
+<style>
+    table{
+        border-collapse:collapse;
+        caption-side: bottom;
+    }
+    caption{
+        font-weight:bold;
+        margin-top:16px;
+    }
+    th,td{padding:5px 10px;}
+    td,th{border:1px solid #1c1c1c;text-align:center;}
+
+</style> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla 2</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            caption-side: bottom;
+        }
+        caption{
+            font-weight:bold;
+            margin-top:16px;
+        }
+        th,td{padding:5px 10px;}
+        td,th{border:1px solid black;text-align:center;}
+        td {background-color:rgba(245, 225, 253, 0.671);border-color:white}
+        th {background-color:rgba(198, 157, 214, 0.671)}
+        tr:nth-child(even) {
+             background-color: rgba(91, 92, 155, 0.4);
+            }
+
+        th:nth-child(even),td:nth-child(even) {
+             background-color: rgba(212, 150, 204, 0.4);
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Este es el Caption de la tabla
+        </caption>
+        <thead>
+            <tr>
+                <th>Ciudad</th>
+                <th>Aeropuerto</th>
+                <th>Playa</th>
+                <th>Habitantes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reus</td>
+                <td>Si</td>
+                <td>No</td>
+                <td>100000</td>
+             </tr>
+            <tr>
+                <td>Tarragona</td>
+                <td>No</td>
+                <td>Si</td>
+                <td>130000</td>
+            </tr>
+            <tr>
+                <td>Madrid</td>
+                <td>Si</td>
+                <td>No</td>
+                <td>3100000</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>1600000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
