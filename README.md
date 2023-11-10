@@ -2,7 +2,7 @@
 ## Allá va el subtitulo
 Lista de cosas:
 - Llamar vete
-- Pedir analisis Lovi
+- Pedir analisis
 - Buscar regalos navidad
 - proyecto diseño de personaje
 
