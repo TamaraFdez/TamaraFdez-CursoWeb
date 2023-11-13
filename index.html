@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <style>
-          #Menu {
+        #Menu {
             display: inline;
-            position: fixed; top: 0;
+            position: fixed;
+            top: 0;
             width: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: beige;
+
+            
 
             text-align: center;
-            color: #2d2630;
+            color: #76179e;
             font-size: 1.3em;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #4da7df;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3798da;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(112, 32, 112);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(193, 208, 236);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
+
 <body>
     <nav>
         <div id="Menu">
-         
+            <ul>
+                <li class="dropdown">HTML
+                    <ul>
+                        <div class="dropdown-content">
+                            <li><a href="HTML5/">Primeros Pasos</a></li>
+                            <li> <a href="ejercicios_html_texto/">Etiquetas</a></li>
+                            <li><a href="ejercicios_html_listas/">Listas</a></li>
+                            <li><a href="Ejercicios_html_tablas/">Tablas</a></li>
+                            <li><a href="Picasso/imagenespicaso/Picasso.html">Picasso</a></li>
+                            <li><a href="Tipos_de_imagenes/">Imagenes</a></li>
+                            <li><a href="Ejercicio_maquetar_y_anclas/">Anclas</a></li>
+                            <li><a href="Navegación/gatos_felices/">Navegación</a></li>
+                            <li><a href="Ejercicios_Repaso/Ejerciciorepaso1.html">EJ-Repaso 1</a></li>
+                            <li><a href="Ejercicios_Repaso/Patatasfritas.html">EJ-Repaso 2</a></li>
+                        </div>
 
-            <a href="HTML5/">Primeros Pasos</a>
+                    </ul>
+                </li>
 
-            <a href="ejercicios_html_texto/">Etiquetas</a>
+                <li class="dropdown">CSS
+                    <ul>
+                        <div class="dropdown-content">
 
-            <a href="ejercicios_html_listas/">Listas</a>
+                            <li><a href="Selectores_Basicos/index.html">Selectores</a></li>
 
-            <a href="Ejercicios_html_tablas/">Tablas</a>
-
-            <a href="Picasso/imagenespicaso/Picasso.html">Picasso</a>
-
-            <a href="Tipos_de_imagenes/">Imagenes</a>
-
-            <a href="Ejercicio_maquetar_y_anclas/">Anclas</a>
-
-            <a href="Navegación/gatos_felices/">Navegación</a>
-            <a href="Ejercicios_Repaso/Ejerciciorepaso1.html">EJ-Repaso 1</a>
-            <a href="Ejercicios_Repaso/Patatasfritas.html">EJ-Repaso 2</a>
-            <a href="Selectores_Basicos/index.html">Selectores</a>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
 </body>
+
 </html>
