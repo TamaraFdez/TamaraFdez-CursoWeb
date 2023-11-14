@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0;
+     }
+        .container {
+            max-width: 500px;
+            background-color: blanchedalmond;
+            position: relative;
+        }
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #666;
+            background-color: #BB00BB;
+            color: #fff;
+            position: static;
+            z-index: 2;
+        }
+        #box-5{
+            background-color: red;
+            position: sticky; /* fijo se ancla, sticky ocupa espacio y cuando se baja se queda fijo arriba*/
+            top: 50px;
+            left: 50px;
+            z-index: 3;/*para jugar con la sobreposicion*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">1
+
+        </div>
+        <div id="box-2" class="box">2
+
+        </div>
+        <div id="box-3" class="box">3
+
+        </div>
+        <div id="box-4" class="box">4
+
+        </div>
+        <div id="box-5" class="box">5
+
+        </div>
+        <div id="box-6" class="box">6
+
+        </div>
+        <div id="box-7" class="box">7
+
+        </div>
+        <div id="box-8" class="box">8
+
+        </div>
+        <div id="box-9" class="box">9
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
