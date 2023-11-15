@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Leyes de Murphy</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: grey;
+      max-width: 1900px;
+
+
+    }
+
+    /* main {
+      /* height: 100%;
+      width: 100%; 
+
+    } */
+
+    h1 {
+      text-align: center;
+    }
+
+     .box {
+      display: inline-block;
+      width: 40%;
+      height: 40%;
+      margin: 10px;
+      padding: 10px;
+      z-index: 2;
+      overflow:visible; 
+      
+    }
+
+    #padre {
+      position: relative;
+      
+      background-color: aliceblue;
+     
+      height: 750px;
+      
+    }
+
+    #Naranja {
+      background-color: rgb(250, 190, 80);
+      text-align: center;
+      width: 92%;
+      height: 75px;
+      margin: 0;
+      margin-left: 2%;
+       /* position: absolute;  */
+      border: 3px solid rgb(112, 71, 20);
+      margin-bottom: 2%;
+
+    }
+   
+    
+
+    #green {
+      background-color: rgb(49, 161, 49);
+      border: 3px solid darkgreen;
+      top: 30%;
+      left: 30%;
+      position: absolute;
+      z-index: 3;
+      text-align: center;
+
+
+    }
+    #Amarillo:hover{
+      z-index: 4;
+    }
+
+    #Amarillo {
+      background-color: khaki;
+      border: 3px solid darkgoldenrod;
+      position: absolute;
+      left: 5%;
+
+    }
+    #Azul:hover{
+      z-index: 4;}
+    #Azul {
+      background-color: turquoise;
+      border: 3px solid darkcyan;
+      text-align: right;
+       position: absolute;
+       right: 5%;
+       bottom: 5%;
+    }
+    #Rosa:hover{
+      z-index: 4;}
+    #Rosa {
+      background-color: pink;
+      border: 2px solid palevioletred;
+      position: absolute; 
+      left: 5%;
+      bottom: 5%;
+    }
+    #Rojo:hover{
+      z-index: 4;}
+
+    #Rojo {
+      background-color: rgb(238, 75, 75);
+      border: 2px solid darkred;
+      text-align: right;
+      position: absolute; 
+      right: 5%;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Leyes de Murphy </h1>
+  </header>
+  <main>
+
+    <div id="Naranja"> Cualquier cosa que pueda ir mal, ... irá mal.</div>
+    <div id="padre">
+      <div id="green" class="box">Todo aquello
+        que comienza bien, acaba mal. Todo aquello que comienza mal, acaba peor.</div>
+      <div id="Amarillo" class="box">Si
+        sabes que una cosa puede ir mal y tomas todas las precauciones, irá mal otra
+        cosa.</div>
+      <div id="Azul" class="box">No hay nada que vaya tan mal que no pueda ir
+        peor.</div>
+      <div id="Rosa" class="box">Todo va mal a la
+        vez.</div>
+      <div id="Rojo" class="box">Murphy era un optimista.</div>
+    </div>
+  </main>
+</body>
+
+</html>
