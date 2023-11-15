@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querys</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: bisque;
+            color: blueviolet;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1{
+            display: none;
+        }
+        /*smartphone*/
+        @media only screen and (max-width: 500px) {
+            body{background-color: red;
+            }
+            #smartphone h1{
+                display: block;
+                color: white;
+            }
+        }
+        @media (min-width: 501px) and (max-width: 768px){
+            body{background-color: blue;
+            color: black;}
+            #Tablet h1 {display: block;}
+            
+        }
+        @media (min-width: 769px) and (max-width:1200px){
+            body{background-color: violet;
+            color: aliceblue;}
+            #Normal h1{display: block;}
+        }
+        @media (min-width:1201px){
+            body{
+                background-color: pink;
+                color:white
+
+            }
+            #Widescreen h1{ display: block;
+                
+            }
+        }
+        @media(max-height:500px){
+            body{
+                background-color: aliceblue;
+                color: black;
+            }
+            #Landscape h1 { display: block;}
+        }
+
+            
+        
+    </style>
+</head>
+
+<body>
+    <div id="Widescreen">
+        <h1>Panoramico</h1>
+        <a href="email:"></a>
+    </div>
+    <div id="Normal">
+        <h1>Normal</h1>
+    </div>
+    <div id="Tablet">
+        <h1>Tablet</h1>
+    </div>
+    <div id="smartphone">
+        <h1>movil vertical</h1>
+    </div>
+    <div id="Landscape">
+        <h1>movil horizontal</h1>
+    </div>
+
+</body>
+
+</html>
