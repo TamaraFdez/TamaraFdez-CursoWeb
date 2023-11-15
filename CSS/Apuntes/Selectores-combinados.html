@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinados</title>
+    <style>
+        /* > seleccionar solo hijos directos */
+div > p{
+    background: aqua;
+}
+/* + Si p es el que sigue a div (solo al primero) */
+div + p{
+    background-color: black;
+    color: white;
+}
+/* si p es precedido por un ul con el mismo padre */
+ul ~ p {background-color: red; color: antiquewhite;}
+/* atributo target [ selector de atributo */
+
+a[target]{
+    background: darkmagenta;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        
+        <ul>
+            <li>item1</li>
+            <li><p>Lorem ipsum dolor sit amet consectetur.</p></li>
+            <li>item2</li>
+
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <a href="#">Pagina1</a>
+    <a href="Pagina-2">Pagina 2</a>
+    <a href="https://google.es" target="_blank">Ir a google</a>
+    <br>
+    <br>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
