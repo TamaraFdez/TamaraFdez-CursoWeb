@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before| After</title>
+    <style>
+        /* .is-required::after{
+    content: "*";
+    color: red;
+    padding: 2px; */
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: antiquewhite;
+            background-color: slateblue;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin: 1rem;
+        }
+
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        /* p::first-letter{
+    font-size: larger;
+    color: firebrick;
+} */
+    </style>
+</head>
+
+<body>
+    <!-- <form>
+        <label class="is-required" for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+    </form> -->
+    <!-- <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, exercitationem.
+    </p> -->
+
+    <header>
+        <h1>Hello World</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, laudantium? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Qui, sapiente?
+        </p>
+
+    </header>
+    <section>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam perferendis alias? Rerum assumenda
+            nulla distinctio sapiente maxime. Eum necessitatibus esse temporibus, beatae doloribus ipsam quasi alias
+            perferendis illum repudiandae.</p>
+    </section>
+
+
+</body>
+
+</html>

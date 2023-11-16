@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Var</title>
+    <style>
+        /* Variables accesibles desde cualquier nivel */
+        :root {
+            --container-max: 600px;
+            
+           
+        }
+        header{
+             --header-bg-color: black; 
+            --header-txt-color: red;
+            --header-txt-align: center;
+            
+        }
+        .box{
+           --box-bg-color: red;
+            --box-txt-color: #fff;
+            --box-1-width:1;
+            --box-2-width:3;
+            --box-shadow-h-offset: 10px;
+            --box-shadow-v-offset: 5px;
+            --box-shadow-blur: 5px;
+            --box-shadow-color: rgba(87, 16, 87, 0.425);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rebeccapurple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            max-width: var(--container-max);
+            background-color: aliceblue;
+        }
+        header{
+        background-color: var(--header-bg-color);
+        text-align: var(--header-txt-align);
+        color: var(--header-txt-color);
+
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background-color: var(--box-bg-color);
+            color: var(--box-txt-color);
+            
+        }
+        .box-1{ flex: var(--box-1-width);
+            box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset) 
+             var(--box-shadow-blur) var(--box-shadow-color) 
+        }
+        .box-2{
+            flex: var(--box-2-width);
+            box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset) 
+             var(--box-shadow-blur) var(--box-shadow-color) 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet, repellendus minus commodi
+                repudiandae illo tempore rerum inventore odit ullam aperiam culpa odio quisquam consectetur. Magni
+                possimus similique distinctio natus!</p>
+        </div>
+        <div class="box box-2">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet, repellendus minus commodi
+                repudiandae illo tempore rerum inventore odit ullam aperiam culpa odio quisquam consectetur. Magni
+                possimus similique distinctio natus!</p>
+        </div>
+    </div>
+</body>
+
+</html>
