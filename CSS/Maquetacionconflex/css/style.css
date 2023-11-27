@@ -208,6 +208,7 @@ section {
     padding: 30px;
     gap: 3em;
     color: #fff;
+    box-shadow: 0 0 5px rebeccapurple;
     
    
 }

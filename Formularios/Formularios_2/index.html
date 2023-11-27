@@ -1,0 +1,75 @@
+<!-- Ejercicios - Formularios 2 Enunciado En la actividad anterior se te proponía
+realizar el siguiente formulario: Crea una página web que contenga un formulario
+con los siguientes campos de información: El nombre, con un control de tipo
+texto. Los apellidos, con un control de tipo texto. El sexo, con dos opciones
+excluyentes hombre o mujer. El correo electrónico, con un control de tipo texto.
+Una casilla de verificación con el texto "Deseo recibir información sobre
+novedades y ofertas". Una casilla de verificación con el texto "Declaro haber
+leido y aceptar las condiciones generales del programa y la normativa sobre
+protección de datos". Un botón de envío. Además, tienes que tener en cuenta los
+siguientes requisitos: El título de la página debe ser Formulario de registro -
+Mi web. El método de envío del formulario debe ser GET. El destino del envío del
+formulario debe ser "". La longitud máxima de entrada de datos de los controles
+para el nombre y los apellidos debe ser 50 caracteres. La casilla de
+verificación con el texto "Deseo recibir información sobre novedades y ofertas"
+debe estar activada por defecto. Al formulario anterior le tienes que añadir los
+siguientes campos de información: Población, una lista desplegable con las
+opciones Alicante, Madrid, Sevilla y Valencia. Descripción, un área de texto
+multilínea. Además, tienes que asociar la etiqueta de cada control a su control
+para mejorar la usabilidad y la accesibilidad. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de
+        registro - Mi web</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+    </header>
+    <main>
+        <form method="get" action="">
+
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" id="name" maxlength="50" placeholder="Ej:Pedro, Raul, Jasmin"> <br><br>
+
+            <label for="Lname">Apellidos: </label>
+            <input type="text" name="Lname" id="Lname" maxlength="50" placeholder="Ej:Pica Piedra"><br><br>
+            Sexo:
+
+            <input type="radio" id="hombre" name="sex" value="hombre">
+            <label for="hombre">Masculino</label> <input type="radio" id="mujer" name="sex" value="mujer">
+            <label for="mujer">Femenino</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br><br>
+
+            <label for="ciudad">Población</label>
+<select id="ciudad" name="ciudad">
+  <option value="Alicante">Alicante</option>
+  <option value="Madrid">Madrid</option>
+  <option value="Sevilla">Sevilla</option>
+  <option value="Valencia">Valencia</option>
+</select> <br><br>
+Descripción:
+<textarea name="descripcion" style="width:300px; height:50px;">
+
+    </textarea><br><br>
+
+            <input type="checkbox" id="publicidad" name="publicidad" value="publicidad" checked>
+            <label for="publicidad">Deseo recibir información sobre novedades y ofertas</label><br>
+
+            <input type="checkbox" id="Proteccion-de-datos" name="Proteccion-de-datos" value="Proteccion-de-datos" checked>
+            <label for="Proteccion-de-datos">Declaro haber leido y aceptar las condiciones generales del programa y la
+                normativa sobre la protección de datos </label> <br><br>
+                <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>
