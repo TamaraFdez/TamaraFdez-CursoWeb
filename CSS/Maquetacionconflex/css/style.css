@@ -1,0 +1,259 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+ * {
+
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ body {
+     
+     display: flex;
+     flex-direction: column;
+
+
+ }
+
+ /* Patrones */
+ .btn {
+    text-decoration: none;
+     color: #fff;
+ }
+ .pink
+ {
+    color: fuchsia;
+    text-shadow: 6px 6px 0px rgba(62, 36, 88, 0.616);
+ }
+ .blue{
+    color: #6097FD;text-shadow: 6px 6px 0 #202966b7;
+ }
+ .bg-1{
+    background: #fff;
+    color: #333;
+ }
+ .bg-2{
+    background: wheat;
+    color: black;
+ }
+ .marginbottom {
+    margin-bottom: 30px;
+ }
+
+
+ /* MENU Y BANNER */
+
+ header {
+     background: url(../img/banner2.jpg)no-repeat center center/cover;
+     display: flex;
+     flex-direction: column;
+     color: #fff;
+     height: 100vh;
+     font-family: 'Vina Sans', sans-serif;
+ }
+
+ #Navbar {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-color: rgba(102, 51, 153, 0.9);
+     align-items: baseline;
+     padding: 20px;
+     align-items: center;
+     border-bottom: 1px solid rebeccapurple;
+     box-shadow: 2px 2px 10px fuchsia;
+ }
+
+ #Navbar img {
+     height: 50px;
+
+ }
+
+ #Navbar ul {
+     list-style: none;
+     display: flex;
+     padding: 0 16px;
+     gap: 15px;
+     font-size: 1.9rem;
+ }
+
+ #Navbar ul a {
+    text-decoration: none;
+     color: #fff;
+     text-shadow: 2px 2px 10px fuchsia;
+ }
+ #Navbar ul a:hover{
+color: #6097FD;
+    text-shadow: 2px 2px 15px #7083fc;
+ } 
+
+ #Banner {
+     background-color: rgba(230, 119, 245, 0.2);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     height: 100%;
+     text-align: center;
+     text-shadow: 5px 5px 10px rebeccapurple;
+ }
+
+ #Banner h2 {
+
+     border-radius: 20px;
+     font-size: 5rem;
+     
+     padding: 20px;
+ }
+
+ #Banner p {
+     font-size: 1.2rem;
+     font-style: italic;
+
+ }
+ #Banner .btn{
+    padding: 10px 30px;
+    border: 2px solid #4452B2;
+    border-radius: 10px;
+    background:  rgba(102, 51, 153, 0.905);
+    margin-top: 30px;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif
+}
+
+/* MAIN */
+main{
+    background: #fff;
+    
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    gap: 1em;
+    padding: 10px;
+    
+    margin: 20px;
+  
+}
+/* tarjetas */
+ .pj .tarjeta-pj{
+    border-top: none;
+    margin:0 10px 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem; 
+ }
+.pj article {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.pj .jinx img{
+    width: 100%;
+    
+    border-radius: 10px;
+   
+    
+    
+
+}
+.pj article p{
+    
+    
+    border: 1px solid goldenrod;
+    border-radius: 2px 2px 10px 10px;
+    padding: 10px;
+    
+    
+    
+}
+.tarjeta-pj article h3 {
+    
+    margin: 0 40px 0 40px;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+.vi img, .jayce img{
+    width: 100%;
+    border-radius: 10px;
+    
+    
+
+}
+.vi p, .jayce p{
+    border: 1px solid #FFDA9F;
+    text-align: left;
+   
+    
+}
+
+/* Ambientacion */
+
+.amb { background: linear-gradient( rgb(110, 76, 145), rgb(219, 97, 213)) ;
+    margin: 0;
+    padding: 30px;
+    gap: 3em;
+    color: #fff;
+    
+   
+}
+.amb .lugares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.amb .lugares i{
+    font-size: 80px;
+}
+.amb article {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.amb .war{
+
+margin-bottom: 30px;
+}
+
+/* Contacto */
+
+.contact{
+margin-bottom: 50px ;
+
+
+}
+.contact .contact-2{
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    gap: 2em;justify-content: space-around;
+}
+/* footer */
+footer{
+    
+    
+    height: 300px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/Ilustración4.jpg) no-repeat top center/cover;
+    text-shadow: 5px 5px 30px #6097FD;
+    font-size: x-large;
+    box-shadow: -2px 0px 10px black;
+}
+

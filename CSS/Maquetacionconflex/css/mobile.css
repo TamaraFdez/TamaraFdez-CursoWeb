@@ -1,0 +1,20 @@
+.pj .tarjeta-pj{
+    display: flex;
+    flex-direction: column;
+    
+}
+.pj article{
+    width: 100%;
+}
+.amb{
+    text-align: center;
+    
+}
+.amb .lugares{
+    flex-direction: column; }
+.contact{
+    text-align: center;
+}
+.contact .contact-2{
+        flex-direction: column;
+    }
