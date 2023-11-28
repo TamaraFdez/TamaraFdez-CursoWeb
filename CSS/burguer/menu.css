@@ -1,0 +1,144 @@
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    
+
+}
+/* contenedor icono del menu */
+.menu-wrap .burger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* lineas del menu */
+
+.menu-wrap .burger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    
+
+}
+.menu-wrap .burger > div::before,
+.menu-wrap .burger > div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    top: -10px;
+    z-index: 1;
+
+}
+.menu-wrap .burger > div::after{
+    top: 10px;
+}
+/* Animacion del menu */
+.menu-wrap .toggler:checked + .burger > div{
+    transform: rotate(135deg);
+}
+/* crear la X */
+
+.menu-wrap .toggler:checked + .burger > div::before,
+.menu-wrap .toggler:checked + .burger > div::after{
+    top: 0;
+    transform: rotate(90deg);
+
+}
+/* Rotar al ponerse encima */
+
+.menu-wrap .toggler:checked:hover + .burger > div{
+    transform: rotate(225deg);
+}
+/* css para la capa del menu */
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+   
+}
+.menu-wrap .menu > div{
+    background-color: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    opacity: 0;
+
+
+}
+.menu-wrap .menu > div > div{
+    text-align: center;
+    max-width: 90vW;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li{
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu-wrap .menu > div > div > ul >li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
+}
+.menu-wrap .menu > div > div > ul >li a:hover {
+    color: var(--secundary-color);
+} 
+/* Mostrar el Menu */
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+    opacity: 1;
+}
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.2s;
+}
+
+
+
+
+
+
