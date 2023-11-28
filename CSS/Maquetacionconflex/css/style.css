@@ -50,6 +50,9 @@
 
 
  /* MENU Y BANNER */
+ .menu-wrap{
+    display: none;
+ }
 
  header {
      background: url(../img/banner2.jpg)no-repeat center center/cover;
@@ -110,8 +113,8 @@ color: #6097FD;
  #Banner h2 {
 
      border-radius: 20px;
-     font-size: 5rem;
-     
+     font-size: 4em;
+     color: white;
      padding: 20px;
  }
 
@@ -252,7 +255,7 @@ margin-bottom: 50px ;
 /* footer */
 footer{
     
-    
+    text-align: center;
     height: 300px;
     color: #fff;
     display: flex;
