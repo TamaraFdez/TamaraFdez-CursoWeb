@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <style>
-        body {background-image: url(https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg);background-size: cover;}
-        #Menu {
-            display: inline;
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
             position: fixed;
             top: 0;
             width: 100%;
             margin: 0;
             padding: 0;
-
-            
-
-            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #4da7df;
             color: #76179e;
-            font-size: 1.3em;
+            font-size: 1.9em;
+            height: 50px;
         }
 
         ul {
@@ -27,99 +33,107 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #4da7df;
+
+
+
         }
 
-        li.dropdown {
-            display: inline-block;
-            width: 70px;
-            border: 1px solid darkblue;
+        .dropdown {
+            position: relative;
+            
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #3798da;
+            background-color: #76179e;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-left: 1px solid purple;
-        }
-
-        .dropdown-content a {
-            color: rgb(112, 32, 112);
             padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: rgb(193, 208, 236);
+       
         }
 
         .dropdown:hover .dropdown-content {
-            display: block;
+            display: flex;
         }
-        .dropdown:hover{background-color: #76179e; color: white;}
-        .java {display: inline-block;}
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            background-color: #76179e;
+        }
+
+        a:hover {
+            background-color: aliceblue;
+            color: #76179e;
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <div id="Menu">
-            <ul>
-                <li class="dropdown">HTML
-                    <ul>
-                        <div class="dropdown-content">
-                            <li><a href="HTML5/">Primeros Pasos</a></li>
-                            <li> <a href="ejercicios_html_texto/">Etiquetas</a></li>
-                            <li><a href="ejercicios_html_listas/">Listas</a></li>
-                            <li><a href="Ejercicios_html_tablas/">Tablas</a></li>
-                            <li><a href="Picasso/imagenespicaso/Picasso.html">Picasso</a></li>
-                            <li><a href="Tipos_de_imagenes/">Imagenes</a></li>
-                            <li><a href="Ejercicio_maquetar_y_anclas/">Anclas</a></li>
-                            <li><a href="Navegación/gatos_felices/">Navegación</a></li>
-                            <li><a href="Ejercicios_Repaso/Ejerciciorepaso1.html">EJ-Repaso 1</a></li>
-                            <li><a href="Ejercicios_Repaso/Patatasfritas.html">EJ-Repaso 2</a></li>
-                        </div>
+        <div class="Html dropdown"><span>Html 5</span>
+            <div class="dropdown-content">
 
-                    </ul>
-                </li>
 
-                <li class="dropdown">CSS
-                    <ul>
-                        <div class="dropdown-content">
 
-                            <li><a href="CSS/Selectores_Basicos/index.html">Selectores</a></li>
-                            <li><a href="CSS/Selectores_Basicos/selectores2.html">Selectores-2</a></li>
-                            <li >Apuntes
-                                <ul>
-                                    <li>
-                                        <a href="CSS/Apuntes/Enlaces.html">Enlaces</a>
-                                        <a href="CSS/Apuntes/Float.html">float</a>
-                                        <a href="CSS/Apuntes/inline-block.html">Inline-block</a>
-                                        <a href="CSS/Apuntes/menus.html">Navbar</a>
-                                        <a href="CSS/Apuntes/posicionamiento.html">Posicionamiento</a>
-                                        <li><a href="CSS/Apuntes/solucion-murphy.html"></a></li>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="CSS/Posicionamiento/efemerides.html">Posicionamiento-Efemerides</a></li>
-                            <li><a href="CSS/Posicionamiento/murphy-1.html">Posicionamiento-Murphy</a></li>
-                            <li><a href="CSS/Posicionamiento/software-libre-2.html">Software Libre</a></li>
-                            <li><a href="CSS/bird.html">Pajarito</a></li>
-                            <li><a href="CSS/Ejercicios-Flex/index.html">Ejercicios-Flex</a></li>
-                            <li><a href="CSS/Hotel/index.html">Ejercicio Hotel</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <!-- <li class="dropdown">JavaScrip
-                    
-                </li> -->
-            </ul>
+                <ul>
+                    <li><a href="HTML5/">Primeros Pasos</a></li>
+                    <li> <a href="HTML5/ejercicios_html_texto/">Etiquetas</a></li>
+                    <li><a href="HTML5/ejercicios_html_listas/">Listas</a></li>
+                    <li><a href="HTML5/Ejercicios_html_tablas/">Tablas</a></li>
+                    <li><a href="HTML5/Picasso/imagenespicaso/Picasso.html">Picasso</a></li>
+                    <li><a href="HTML5/Tipos_de_imagenes/">Imagenes</a></li>
+                    <li><a href="HTML5/Ejercicio_maquetar_y_anclas/">Anclas</a></li>
+                    <li><a href="HTML5/Navegación/gatos_felices/">Navegación</a></li>
+                    <li><a href="HTML5/Ejercicios_Repaso/Ejerciciorepaso1.html">EJ-Repaso 1</a></li>
+                    <li><a href="HTML5/Ejercicios_Repaso/Patatasfritas.html">EJ-Repaso 2</a></li>
+                </ul>
+            </div>
         </div>
+
+
+        <div class="css dropdown "><span>CSS</span>
+            <div class="dropdown-content">
+
+
+                <ul>
+
+                    <li><a href="CSS/Selectores_Basicos/index.html">Selectores</a></li>
+                    <li><a href="CSS/Selectores_Basicos/selectores2.html">Selectores-2</a></li>
+                    <li><a href="CSS/Apuntes/Enlaces.html">Enlaces</a></li>
+                    <li><a href="CSS/Apuntes/Float.html">float</a></li>
+                    <li><a href="CSS/Apuntes/inline-block.html">Inline-block</a></li>
+                    <li><a href="CSS/Apuntes/menus.html">Navbar</a></li>
+                    <li><a href="CSS/Apuntes/posicionamiento.html">Posicionamiento</a></li>
+                    <li><a href="CSS/Posicionamiento/efemerides.html">Efemerides</a></li>
+                    <li><a href="CSS/Posicionamiento/murphy-1.html">Murphy</a></li>
+                    <li><a href="CSS/Apuntes/solucion-murphy.html">Solucion murphy</a></li>
+                    <li><a href="CSS/Posicionamiento/software-libre-2.html">Software Libre</a></li>
+                    <li><a href="CSS/bird.html">Pajarito</a></li>
+                    <li><a href="CSS/Ejercicios-Flex/index.html">Ejercicios-Flex</a></li>
+                    <li><a href="CSS/Hotel/index.html">Hotel</a></li>
+                    <li><a href="CSS/Maquetacionconflex/index.html">Proyecto Práctico-Página Web</a></li>
+
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="form dropdown "> <span>Formularios</span>
+            <div class="dropdown-content">
+
+                <ul>
+                    <li>
+                        <a href="Formularios/Resgistration.html">Formulario de Registro</a>
+                    </li>
+                    <li><a href="Formularios/">Ejercicios</a></li>
+
+                </ul>
+            </div>
+        </div>
+
     </nav>
 </body>
 

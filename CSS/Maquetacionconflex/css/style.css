@@ -41,6 +41,12 @@
  .marginbottom {
     margin-bottom: 30px;
  }
+ h2{
+    color: #6097FD;
+ }
+ .amb h2 {
+    color: #fff;
+ }
 
 
  /* MENU Y BANNER */
