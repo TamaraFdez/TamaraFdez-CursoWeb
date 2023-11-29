@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" media="screen and (max-width:850px)" href="css/Contactmobile.css">
+    <title>Inscripcion</title>
+</head>
+
+<body>
+    <nav>
+        <div id="Navbar">
+            <input type="checkbox" class="toggler">
+            <div class="burger">
+                <div></div>
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Instalaciones</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- <header>
+        <h1>Apúntate a la aventura</h1>
+    </header> -->
+
+    <form action="#">
+        <fieldset>
+            <legend>Inscripcion</legend>
+            <p>Nos gustaría que nos ayudes proporcionándonos algunos da tos para darte la certeza de que te encuentras
+                en un lugar seguro y de sana convivencia.
+                ¡Te pedimos tu atención y completa sinceridad!</p>
+
+            <div class="input-group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Nombre </label>
+            </div>
+            <div class="input-group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Apellidos </label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Sexo</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" min="18" max="100" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Edad</label>
+            </div>
+            <div class="input-group">
+                <input type="tel" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+                <span class=" highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Telefono</label>
+            </div>
+            <div class="input-group">
+                <input type="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label">Email</label>
+            </div>
+            <div class="alergia">
+                <label>¿Alergias conocidas?:</label>
+                <div>
+                    <label >No
+                        <input type="radio" class="inline" checked></label>
+                    <label >Si
+                        <input type="radio" class="inline"></label>
+                  
+                </div>  <label>¿A qué tienes alergia? <input type="text">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </label>
+            </div>
+
+
+
+            <div class="coment">
+
+                <label>Comentarios
+                    <textarea name="coment" id="coment" cols="45" rows="10" placeholder="Preguntas, dudas, opiniones..."></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span></label>
+            </div>
+            <div class="terms">
+            <label >
+                <input type="checkbox" class="inline"    required>Acepto los <a href="#">Terminos y condiciones</a>
+            </label></div>
+            <input type="submit" value="Sumbit">
+
+        </fieldset>
+
+
+
+
+    </form>
+
+
+    <div class="box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -70,7 +70,7 @@
      background-color: rgba(102, 51, 153, 0.9);
      align-items: baseline;
      padding: 20px;
-     align-items: center;
+     
      border-bottom: 1px solid rebeccapurple;
      box-shadow: 2px 2px 10px fuchsia;
  }
@@ -97,6 +97,11 @@
 color: #6097FD;
     text-shadow: 2px 2px 15px #7083fc;
  } 
+#Navbar .burger, #Navbar .toggler{
+    display: none;
+}
+
+ /* banner */
 
  #Banner {
      background-color: rgba(230, 119, 245, 0.2);
@@ -264,6 +269,8 @@ footer{
     background: url(../img/Ilustración4.jpg) no-repeat top center/cover;
     text-shadow: 5px 5px 30px #6097FD;
     font-size: x-large;
-    box-shadow: -2px 0px 10px black;
+    box-shadow: -2px 0px 20px rgb(61, 44, 44);
+    
 }
+
 
