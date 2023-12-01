@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    font-family: 'Fira Sans';
+
+}
+
+h1 {
+    font-family: 'Rock Salt';
+    text-align: center;
+    padding-bottom: 3rem;
+    color: #007bff;
+    padding-top: 1rem;
+}
+
+h1~p {
+    color: rgb(50, 110, 160);
+}
+
+select option:nth-child(odd) {
+    background-color: rgba(50, 110, 160, 0.25);
+}
+
+input:invalid,
+select:invalid {
+    background-color: rgba(200, 0, 0, 0.15);
+}
+
+
+input:valid,
+select:valid {
+    background-color: rgba(0, 200, 0, 0.15);
+}
+
+.navbar a:not(.navbar-brand):hover {
+    background-color: #007bff;
+    border-radius: 0.25rem;
+}
+
+.fa-utensils {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+label[for]::first-letter {
+    text-decoration: underline;
+    font-weight: bold;
+}
