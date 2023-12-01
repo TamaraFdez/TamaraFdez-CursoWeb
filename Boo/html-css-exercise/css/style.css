@@ -20,7 +20,7 @@ h1 {
     padding-top: 1rem;
 }
 
-h1~p {
+h1 ~ p {
     color: rgb(50, 110, 160);
 }
 
@@ -39,17 +39,23 @@ select:valid {
     background-color: rgba(0, 200, 0, 0.15);
 }
 
-.navbar a:not(.navbar-brand):hover {
+.navbar a:hover {
     background-color: #007bff;
     border-radius: 0.25rem;
+    padding: 0.5rem;
+    color: white;
 }
 
-.fa-utensils {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+i[class~="fa-utensils"] {
+    margin: 0 0.5rem;
+   
 }
 
 label[for]::first-letter {
     text-decoration: underline;
     font-weight: bold;
 }
+label::after{
+    background: inherit !important; 
+}
+/* .form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after  */
