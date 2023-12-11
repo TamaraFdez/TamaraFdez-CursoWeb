@@ -1,2 +1,6 @@
 passwords.txt
-desktop.ini
+*.ini
+*.scss
+*.json
+node_modules
+main.css.map

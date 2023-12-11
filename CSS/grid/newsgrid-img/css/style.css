@@ -52,7 +52,7 @@ h1,h2,h3, h4, h5, h6{
     text-transform: uppercase; /*siempre mayus*/
     padding: 0.4rem 0.6rem;
     border-radius: 15px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 .category-sports{
     background: var(--sport-color);
@@ -137,9 +137,7 @@ h1,h2,h3, h4, h5, h6{
     border-bottom: #555 1px dotted;
     width: 90%;
 }
- .list li a:hover{
-    background: var(--primary-color);
- }
+
  /* Menu navegación */
 
  #main-nav{
@@ -192,7 +190,7 @@ font-weight: bold;
  }
  #showcase::before{
     content: "";
-    background: url(img/featured.jpg) no-repeat center center/cover;
+    background: url(../img/featured.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -245,6 +243,9 @@ font-weight: bold;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
  }
+ #main-footer .footer-container a{
+    color:  #fff;
+ }
  #main-footer .footer-container > *:last-child{
     background-color: #444;
     grid-column: 1/span 4;
@@ -289,18 +290,24 @@ font-weight: bold;
     #main-about .container .join-article{
         color: #fff;
     }
- 
+ #main-about .container-article .card #Category{
+    font-size: 1.3rem;
+  }
     #main-about .container .container-article .list-article{
         list-style: none;
+        font-size: 0.8rem;
         
     }
     #main-about .container .container-article .card{
     margin-bottom: 2rem;}
   #main-about .container .org .data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
     background: #f3f3f3;
-    padding: .4rem;
+   font-size: 0.7rem;
+   padding: 0.7rem 0.3rem 0.4rem 0.3rem;
     
   }
+  
+ 
+  
