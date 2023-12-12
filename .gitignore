@@ -1,6 +1,6 @@
 passwords.txt
 *.ini
-*.scss
-*.json
+
+*-lock.json
 node_modules
-main.css.map
+
