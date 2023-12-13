@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Whisper&display=swap');
+// reset
+
+*{
+    color: inherit;
+    margin: 0;
+}
+body{
+    font-family: 'Kalnia', serif;
+
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    border: 0;
+    border-top: px dotted #efefef;
+
+}
+img{
+    max-width: 100%;
+}
