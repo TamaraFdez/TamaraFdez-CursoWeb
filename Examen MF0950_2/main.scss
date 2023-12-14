@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hedvig+Letters+Serif:opsz@12..24&family=Jost&family=Satisfy&display=swap");
+
+// Paleta de colores
+$primary: #fff;
+$secondary: #333;
+$green: #55ac69;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+  background-color: $primary;
+}
+
+// utilidades
+a {
+  text-decoration: none;
+  color: $secondary;
+}
+a:hover {
+  color: $primary;
+}
+
+// Header
+
+header {
+  background: linear-gradient($primary, $secondary);
+
+  height: 100vh;
+
+  //Navbar
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background: linear-gradient(to right, $primary, $secondary);
+    box-shadow: 1px 1px 5px $secondary;
+  }
+  .n-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .n-right {
+    input {
+      padding: 0.75em;
+      background-color: $primary;
+      border: 1px solid $green;
+
+      color: $green;
+      margin: -1px;
+    }
+    input[type="search"] {
+      width: 120px;
+    }
+    .btn {
+      background: $green;
+      color: $primary;
+    }
+    .btn:hover {
+      cursor: pointer;
+      background-color: $primary;
+      color: $green;
+    }
+  }
+  //   Showcase
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 4rem;
+      text-shadow: 1px 1px 3px $primary;
+    }
+    img {
+      border-radius: 50%;
+      box-shadow: 2px 2px 15px $secondary;
+    }
+  }
+}
+
+main {
+  padding: 30px;
+  .box-1 {
+    background: url(../../cuervos-img/img/woods-690415_1280.jpg) no-repeat
+      center center/cover;
+  }
+  .info {
+    background: $primary;
+    h2 {
+      text-shadow: $green 1px 1px 2px;
+    }
+  }
+  .box-3 {
+    background: url(../../cuervos-img/img/woods-690415_1280.jpg) no-repeat
+      center center/cover;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .card {
+      max-width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+footer {
+  text-align: center;
+  background: $secondary;
+  color: $primary;
+  a {
+    color: $primary;
+  }
+  a:hover {
+    color: $green;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+}

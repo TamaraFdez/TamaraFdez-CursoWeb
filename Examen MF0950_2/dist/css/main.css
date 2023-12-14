@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hedvig+Letters+Serif:opsz@12..24&family=Jost&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(#fff, #333);
+  height: 100vh;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  background: linear-gradient(to right, #fff, #333);
+  box-shadow: 1px 1px 5px #333;
+}
+header .n-left {
+  display: flex;
+  align-items: center;
+}
+header .n-right input {
+  padding: 0.75em;
+  background-color: #fff;
+  border: 1px solid #55ac69;
+  color: #55ac69;
+  margin: -1px;
+}
+header .n-right input[type=search] {
+  width: 120px;
+}
+header .n-right .btn {
+  background: #55ac69;
+  color: #fff;
+}
+header .n-right .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #55ac69;
+}
+header .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 3rem;
+}
+header .title h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  text-shadow: 1px 1px 3px #fff;
+}
+header .title img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px #333;
+}
+
+main {
+  padding: 30px;
+}
+main .box-1 {
+  background: url(../../cuervos-img/img/woods-690415_1280.jpg) no-repeat center center/cover;
+}
+main .info {
+  background: #fff;
+}
+main .info h2 {
+  text-shadow: #55ac69 1px 1px 2px;
+}
+main .box-3 {
+  background: url(../../cuervos-img/img/woods-690415_1280.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+main .box-3 .card {
+  max-width: 30%;
+}
+main .box-3 .card img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #55ac69;
+}
+footer .links {
+  display: flex;
+  flex-direction: row;
+}
