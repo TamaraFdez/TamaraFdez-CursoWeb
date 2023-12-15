@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="css/">
+    <title>Hazte miembro</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="Inicio" class="navbar">
+            <div class="n-left">
+
+                <a href="#menu" class="nav-target"><img class="logo" src="../cuervos-img/img/LOGO.png"
+                        alt="Logo del Club">
+
+
+                    <img src="bx-menu.svg" alt="menu" class="nav-icon"> </a>
+
+                <div class="menu" id="menu">
+                    <a href="#Inicio" class="nav-link"> Inicio</a>
+                    <a href="formulario.html" class="nav-link">Hazte socio</a>
+                    <a href="#what" class="nav-link">¿Qué soy?</a>
+                    <a href="#info" class="nav-link"> Información</a>
+                    <a href="#history" class="nav-link"> Historia</a>
+                    <a href="#social" class="nav-link">Redes Sociales</a>
+                </div>
+            </div>
+            <div class="n-right">
+                <input id="search" type="search" placeholder="Buscar…">
+                <button class="btn btn-search" value="Buscar"> <img src="bx-search.svg" alt="lupa"></button>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Regístrate</h1>
+        <form action="#" method="get">
+
+            <label>Tu Nombre: <br>
+                <input type="text" id="name" name="name" required></label> <br>
+            <label>Tus Apellidos: <br>
+                <input type="text" name="last-name" id="last-name" required></label><br>
+            <label>Tu Email: <br>
+                <input type="email" name="email" id="email" required></label><br>
+
+            <label>Tu dirección: <br>
+                <input type="text" id="address" name="street-address" required></label><br>
+
+            <label>Ciudad: <br>
+                <input type="text" id="city" name="city" required>
+            </label><br>
+            <label>Código Postal: <br>
+                <input type="text" id="codigopostal" pattern="[0-9]" required="required">
+            </label><br><label>Crea una contraseña: <br>
+                <input type="password" name="new-password" id="new-password" pattern="[a-z0-5]{8,}"
+                    required></label><br>
+            <h2>Sexo:</h2>
+            <div class="sex">
+
+                <label>
+                    <input type="radio" id="female" name="sexo" checked> Femenino</label>
+                <label>
+                    <input type="radio" id="male" name="sexo"> Masculino</label>
+                <label>
+                    <input type="radio" id="other" name="sexo"> Otros</label>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms-and-conditios" name="terms-and-conditios" required> <label
+                    for="terms-and-conditios">Acepto
+                    los <a href="#">Terminos y condiciones</a>
+                </label>
+            </div>
+            <div class="send">
+                <button class="btn sumbit" type="submit">Enviar</button>
+                <button class="btn reset" type="reset">Borrar</button>
+            </div>
+
+
+
+        </form>
+    </main>
+    <footer>
+        <div id="social" class="social">
+            <a href="#"> <i class='bx bxl-google'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"> <i class='bx bxl-instagram'></i></a>
+            <a href="#"> <i class='bx bxl-linkedin-square'></i></a>
+
+        </div>
+        <div class="links">
+            <div class="link-1">
+                <ul>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                </ul>
+            </div>
+            <div class="link-2">
+                <ul>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                </ul>
+            </div>
+            <div class="link-3">
+                <ul>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                </ul>
+            </div>
+            <div class="link-4">
+                <ul>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                    <li><a href="#" class="">link</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

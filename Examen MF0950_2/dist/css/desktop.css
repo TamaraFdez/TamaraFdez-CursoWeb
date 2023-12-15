@@ -1,0 +1,65 @@
+header .navbar .n-left {
+  display: flex;
+  flex-direction: row;
+}
+header .navbar .n-left a {
+  height: 30px;
+}
+header .navbar .n-left .logo {
+  height: 30px;
+}
+header .navbar .n-left .nav-icon {
+  display: none;
+}
+header .navbar .n-left .menu {
+  position: static;
+  grid-template-columns: repeat(6, 1fr);
+  background: none;
+  height: auto;
+  clip-path: circle(150% at top left);
+}
+header .navbar .n-left .menu .nav-link {
+  padding: 4px;
+}
+header .navbar .n-right input[type=search] {
+  width: 160px;
+}
+header .title .raven-title {
+  border-radius: 50%;
+}
+header .title .raven-title img {
+  border-radius: 50%;
+}
+
+main .box-1 {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+main .info p {
+  max-width: 1100px;
+  margin: auto;
+  text-align: left;
+}
+main .box-3 {
+  max-width: 1100px;
+  margin: auto;
+}
+main .box-3 .container-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+footer .social a {
+  padding: 1rem;
+}
+footer .links li {
+  padding-bottom: 1rem;
+}
