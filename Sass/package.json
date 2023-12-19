@@ -1,0 +1,14 @@
+{
+  "name": "sass-intro",
+  "version": "1.0.0",
+  "description": "introduccion a sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/:dist/css/ --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

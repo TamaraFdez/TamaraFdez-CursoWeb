@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'functions';
+
+body{
+    background: $light-color;
+    color: $dar-color;
+    font-family: $font-stack;
+    line-height: 1.5;
+}
+header{
+    padding: 3rem;
+    background: $dar-color;color: set-text-color($dar-color);
+    h1{
+        font-size: 3rem;
+        
+        text-align: center;
+    }
+}
+.section{
+ h3{
+    font-size: 2rem;
+ }
+ &-a{
+    background-color: $primady-color;
+color: #fff;
+ }
+ &-b{background: $secondary-color}
+}
+// a{
+//     color: black;
+//     &:hover{
+//         color: coral;
+//     }
+// }
+%btn-shared{
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.btn{
+    &-light{ 
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: $dar-color
+    }
+    &-dark{
+      @extend %btn-shared;
+      background-color: $dar-color;
+      color: $light-color;
+    }
+}
